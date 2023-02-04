@@ -1,0 +1,48 @@
+/* Anton */
+@font-face{
+    font-family: "Utsav's fonts";
+    /* font-family: Anton; */
+    src: url("/fonts/Anton/Anton-Regular.ttf");
+}
+
+/* Poppins */
+@font-face{
+    font-family: poppins;
+    font-weight: 400;
+    src: url('/fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: poppins;
+    font-weight: 600;
+    src: url('/fonts/Poppins/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: poppins;
+    font-weight: 900;
+    src: url('/fonts/Poppins/Poppins-Black.ttf');
+}
+
+/* playfair display */
+@font-face {
+    font-family: playfair;
+    font-weight: 400;
+    src: url('/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf');
+}
+@font-face {
+    font-family: playfair;
+    font-weight: 600;
+    src: url('/fonts/Playfair_Display/static/PlayfairDisplay-SemiBold.ttf');
+}
+@font-face {
+    font-family: playfair;
+    font-weight: 900;
+    src: url('/fonts/Playfair_Display/static/PlayfairDisplay-Black.ttf');
+}
+
+/* Bungee Shade */
+@font-face {
+    font-family: Bungee;
+    src: url('/fonts/Bungee_Shade/BungeeShade-Regular.ttf');
+}

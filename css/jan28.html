@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #para1 {
+        font-size: 1.5rem;
+        line-height: 1.5em;
+        /* 
+        1.5rem = 24px
+        line-height = 1.5 * 24 = 36px
+        */
+    }
+
+    #para2 {
+        /* 1rem = 16px by default */
+        /* rem: root's em (=font size) */
+        font-size: 1rem;
+    }
+
+    #box3 {
+        font-size: 20px;
+    }
+    #box4{
+        font-size: 10px;
+    }
+
+    #para3, #para4{
+        /* em in font-size: multiple of parent's font-size */
+        font-size: 1.5em;
+        /* 
+        para3: 1.5em = 1.5 * 20 = 30px
+        para4: 1.5em = 1.5 * 10 = 15px
+        */
+        line-height: 1.2em;
+        /* 
+        para3:
+            font-size: 20*1.5 = 30px
+            line-height: 30*1.2 = 36px
+        para4:
+            font-size: 10*1.5 = 15px
+            line-height: 15*1.2 = 18px
+        */
+    }
+
+    #btn1{
+        /* em in anywhere else: multiple of element's own font-size */
+        font-size: 20px;
+        height: 1.5em;
+        /* height: 1.5 * 20 = 30px */
+    }
+
+</style>
+
+<body>
+    <p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis fugit consequuntur adipisci aliquid
+        tenetur iusto minus quod, nihil error repellat tempora quo dolorem id dolores cumque, odio modi. Quam nihil,
+        nemo numquam quaerat voluptatem dolores libero assumenda, veniam ipsum sit iure! Id non ad sunt perferendis
+        maiores, autem ratione consequatur!</p>
+    <p id="para2">Quam pariatur, numquam laudantium similique ratione ea perspiciatis soluta! Id atque totam quo
+        repellat vitae est ex in ea! Libero eveniet corrupti nam ad tenetur, provident enim. Vero unde sapiente dolorum
+        deleniti tempora. Hic, ipsum. Possimus itaque a ut, voluptatum vero labore voluptate culpa architecto quis. Quia
+        aliquam dolore natus!</p>
+    <div id="box3">
+        <p id="para3">Rerum minus consequuntur dicta doloribus molestias soluta quo culpa nesciunt. Ipsum veritatis sit
+            ex, dicta eum, corrupti ducimus omnis hic et ea a voluptatibus natus iure. Corrupti nisi illum sit esse.
+            Maxime tempore libero culpa eaque cumque tempora in iusto enim autem id, placeat odio eveniet? Id atque
+            ratione at?</p>
+    </div>
+    <div id="box4">
+        <p id="para4">Labore tempore sed rem necessitatibus excepturi aut? Velit maiores nemo cum, sequi quibusdam
+            corrupti
+            impedit consequatur ab quia rerum minus magnam nostrum reprehenderit laborum fuga necessitatibus omnis iusto
+            quas ad saepe explicabo exercitationem culpa architecto voluptatum. Quia iste illum error, repudiandae id
+            magni
+            incidunt minus alias culpa eius! Ab, architecto.</p>
+
+    </div>
+    <div><button id="btn1">Button1</button></div> <br>
+    <div><button id="btn2">Button2</button></div> <br>
+    <div><button id="btn3">Button3</button></div> <br>
+    <div><button id="btn4">Button4</button></div> <br>
+</body>
+
+</html>
+
+<!-- 
+    Next session: vw, vh & %
+ -->
