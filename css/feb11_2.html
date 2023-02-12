@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    button{
+        border: solid;
+        background-color: black;
+        color: white;
+    }
+    #btn1{
+        height: 30px;
+        width: 80px;
+        border: none;
+    }
+    #btn2{
+        /* border-width: 2px;      default */
+        /* border-color: black;    default */
+        /* border-style: solid; */
+        /* border-style: dashed; */
+        /* border-style: dotted; */
+        color: red;
+        /* border-color: blue; */
+        /* border-width: 1px; */
+
+        border: green solid 1px;
+    }
+    #btn3{
+        border-bottom: 1px red solid;
+        border-left: maroon 2px solid;
+        border-top: solid green 3px;
+        border-right: blue solid 4px;
+    }
+    #btn4{
+        border-radius: 5px;
+    }
+    #btn5{
+        border-radius: 10px;
+    }
+    #btn6, #btn7, #btn8{
+        height: 2em;
+        width: 7em;
+        border-radius: 0.2em;
+    }
+    #btn6{
+        font-size: 20px;
+        /* 
+        height = 40px
+        width = 140px
+        */
+    }
+    #btn7{
+        font-size: 40px;
+        /* 
+        height = 80px
+        width = 280px
+        */
+    }
+    #btn8{
+        font-size: 8px;
+    }
+    #btn9{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    #btn9:hover{
+        border-color: #bbb;
+        color: #bbb;
+        background-color: #222;
+    }
+    #btn10{
+        height: 50px;
+        width: 100px;
+        border-radius: 50%;
+    }
+</style>
+<body>
+    <div><button id="btn1">Button 1</button></div> <br>
+    <div id="btn2">Button 2</div> <br>
+    <div><button id="btn3">Button 3</button></div> <br>
+    <div><button id="btn4">Button 4</button></div> <br>
+    <div><button id="btn5">Button 5</button></div> <br>
+    <div><button id="btn6">Button 6</button></div> <br>
+    <div><button id="btn7">Button 7</button></div> <br>
+    <div><button id="btn8">Button 8</button></div> <br>
+    <div><button id="btn9">B 9</button></div> <br>
+    <div><button id="btn10">Button 10</button></div>
+</body>
+</html>
+<!-- 
+    Next Class: Controlling border radii of each corner independently
+ -->

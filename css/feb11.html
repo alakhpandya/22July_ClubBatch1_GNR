@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #outer-box{
+        border: solid;
+        height: 90vh;
+        background-image: url('/images/students1.jpg');
+    }
+    #inner-box{
+        /* background-color: rgba(0, 128, 0, 0.7); */
+        background-color: rgba(255, 0, 0, 0.7);
+        height: 50%;
+        width: 70%;
+        /* Choosing color from the list */
+        color: yellow;
+        /* Modifying the color using color picker */
+        /* color: rgb(180, 242, 104); */
+        /* Providing rgb */
+        /* color: rgb(0, 0, 0); */
+        /* color: rgb(233, 0, 0); */
+    }
+    a{
+        background-color: navy;
+        color: white;
+        text-decoration: none;
+        /* Height & Width don't work with in-line elements except <button> & <img> */
+        width: 500px;
+        height: 100px;
+    }
+</style>
+<body>
+    <div id="outer-box">
+        <br><br><br><br>
+        <div id="inner-box">
+            Inner Box
+        </div>
+        <a href="#">Link 1</a>
+    </div>
+</body>
+</html>
