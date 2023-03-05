@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .card{
+        margin: auto;
+    }
+
+    body{
+        font-family: cursive;
+    }
+    img{
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .card{
+        background-color: blueviolet;
+        width: 250px;
+        border-radius: 20px;
+    }
+    .card-upper{
+        position: relative;
+
+    }
+    .card-lower{
+        padding: 0 1rem;
+    }
+    .capsule{
+        background-color: white;
+        padding: 0.25rem 1rem;
+        border-radius: 15px;
+    }
+    button{
+        font-family: cursive;
+        background-color: white;
+        padding: 2px 5px;
+        color: rgb(214, 3, 3);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: rgb(214, 3, 3);
+        color: white;
+        border-color: rgb(214, 3, 3);
+    }
+    h1{
+        font-size: 1.5rem;
+        color: white;
+    }
+    #rating{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    #chat{
+        position: absolute;
+        bottom: 15px;
+        left: 10px;
+    }
+    #views{
+        position: absolute;
+        bottom: 15px;
+        right: 10px;
+    }
+</style>
+<body>
+    <br><br><br><br><br>
+    <div class="card">
+        <div class="card-upper">
+            <img src="/images/card-bg-anime.png" alt="">
+            <button id="rating">18/20</button>
+            <button id="chat">Chat: 11</button>
+            <button id="views">Views: 9141</button>
+        </div>
+        
+        <br> <br>
+        <div class="card-lower">
+            <span class="capsule">Active</span>
+            <span class="capsule">Movie</span>
+            <br> <br>
+            <h1>Fate/stay night Movie: Heaven's Feel - II. Lost</h1>
+        </div>
+        <br>
+    </div>
+</body>
+</html>
+<!-- 
+    Next Class: Put 20% OFF circular sticker on top right corner of the screen
+ -->

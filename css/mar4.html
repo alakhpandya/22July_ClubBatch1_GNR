@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+    }
+    .outer-box{
+        border: solid yellow;
+        /* position: relative; */
+    }
+    .inner-box{
+        margin: auto;
+        border: solid red;
+        width: 80%;
+        /* position: relative; */
+    }
+
+    button{
+        background-color: black;
+        border-color: greenyellow;
+        color: greenyellow;
+        cursor: pointer;
+    }
+    #static{
+        position: static;   /* default */
+        /*
+        We can use properties like 'top'/'bottom'/'left'/'right' with all the positions other than static.
+
+        When we give any other position than static, we actually pick the element on top of the other elements.
+        */
+    }
+
+    #relative{
+        position: relative;
+        /*
+        top: 15px;
+        left: 20px;
+        
+        bottom: 10px;
+        right: 10px;
+        */
+        bottom: 100px;
+        left: 300px
+        /* 
+        Element can be moved with respect to its original place.
+        The element keeps its original position reserved.
+        */
+    }
+    #relative:hover{
+        background-color: greenyellow;
+        color: black;
+        /* bottom: 3px; */
+    }
+
+    #absolute{
+        position: absolute;
+        /* 
+        The element does not keep its original position reserved.
+        We can move it with respect to its parent whose position is relative. If none of its parents have position relative then it will move with respect to body.
+        */
+        /* bottom: 10px; */
+        /* top: 20px;
+        right: 10px; */
+
+        top: 20px;
+        left: 10px;
+    }
+</style>
+<body>
+    <br><br><br><br><br><br>
+    <div class="outer-box">
+        <br><br>
+        <div class="inner-box">
+            <br><br><br>
+            <button id="static">Static</button>
+            <button id="relative">Relative</button>
+            <button id="absolute">Absolute</button>
+            <button>Test</button>
+            <br><br><br><br>
+        </div>
+        <br><br> <br> <br> <br> <br>
+        <button id="sticky">Sticky</button>
+        <br> <br> <br> <br> <br>
+    </div>
+    <br><br>
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing.</h1>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fugiat beatae ab porro officiis repellat aut tempore facere eaque quibusdam animi minus eos fugit hic, doloremque provident perspiciatis, mollitia ex praesentium placeat odio obcaecati. Aperiam voluptatum libero obcaecati quam enim officia nihil, vero adipisci nostrum laborum, dicta corrupti maiores voluptas placeat nulla fugit eius debitis, voluptate eos. Dicta minima modi nemo blanditiis odit dignissimos consequatur enim ea? Modi quaerat harum est veniam iure! Excepturi exercitationem, iusto maiores aliquam eveniet fugiat earum ipsum delectus repudiandae laudantium ullam modi incidunt officia eius dolor! Dolor vel alias iure, sapiente repellendus non laborum. Corporis asperiores possimus veritatis obcaecati architecto minima libero sunt repudiandae consequatur et, mollitia corrupti necessitatibus, natus soluta ea officia, iure quam voluptates ad eligendi totam iusto dolores? Autem harum earum voluptatibus quae, tenetur at! Recusandae, voluptatem? Cupiditate, consectetur sequi? Reprehenderit, consectetur. Itaque animi, nesciunt labore incidunt autem vero. At, ea aut fuga voluptatibus accusamus eveniet accusantium qui repellat aliquid minus reiciendis enim hic quasi vitae, dolorum laboriosam deleniti similique? Obcaecati laudantium dolor soluta omnis rerum quasi adipisci voluptate, facilis sapiente iure, dolorem hic numquam odit, mollitia ad officiis doloribus aspernatur voluptatibus. Distinctio quae, atque molestiae saepe, consequuntur quam earum totam debitis eligendi quas magnam eveniet quia? Deserunt accusantium similique illum voluptatibus vero, aliquid, nobis pariatur aspernatur quis debitis molestiae velit. Veritatis inventore, delectus asperiores eveniet consequuntur recusandae corrupti, eligendi sunt illum, dolorem eius deleniti voluptas. Rerum numquam hic nam aut nulla. Nulla et quam porro, praesentium quis provident similique! Asperiores, voluptates nemo neque ipsam quod, officia sapiente reprehenderit consectetur beatae nesciunt tempore, sint sequi perspiciatis harum dolorem facilis odit ipsum sunt aliquid repellendus. Necessitatibus dignissimos, tempora nihil maxime sint corporis fugit enim excepturi provident ut perspiciatis voluptates vel asperiores, quaerat quod quas doloremque? Rem iusto, dicta ipsam dignissimos amet esse nihil maiores libero optio reprehenderit impedit nulla quisquam dolorem repellendus placeat! Dicta quibusdam error commodi exercitationem! Earum fugiat quas perferendis laudantium, reprehenderit veritatis repellendus quia accusamus tenetur assumenda repudiandae officiis laboriosam natus dolor optio sed nisi cupiditate consectetur! Est, qui numquam nostrum at eum soluta quos, inventore molestiae iusto vel vitae unde deleniti dolor quibusdam dignissimos ipsam quidem nulla officia quo repellat quod incidunt tenetur consectetur! Mollitia accusantium ullam debitis est perspiciatis illum, eum temporibus in laudantium a at, delectus soluta, amet ab minima animi dolor perferendis accusamus nisi? Quo temporibus eius quas sequi, amet aliquid ea aspernatur deleniti facere. Pariatur possimus ipsa asperiores magni nisi iure recusandae provident iste nostrum eligendi, at architecto culpa fugit labore quos atque praesentium amet esse laudantium! Excepturi quibusdam odit autem exercitationem tempore commodi officiis aperiam in possimus, cupiditate, sapiente laboriosam incidunt voluptatem! Dolor dignissimos aliquid accusantium! Porro sint reiciendis, ut dolor qui doloribus, culpa, expedita eius molestiae dolore odit. Totam sint fugit, quasi expedita consectetur id ipsa quisquam unde velit mollitia sit ducimus aliquam vero, iste quod porro maxime aliquid molestias possimus architecto! Excepturi magni, hic vero veritatis accusamus adipisci rem consectetur temporibus corporis saepe, tempora aut blanditiis consequatur? Consectetur fugiat aut quisquam repellendus!</p>
+</body>
+</html>
