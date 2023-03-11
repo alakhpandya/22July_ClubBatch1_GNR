@@ -28,10 +28,11 @@
         background-color: blueviolet;
         width: 250px;
         border-radius: 20px;
+        position: relative;
+        overflow: hidden;
     }
     .card-upper{
         position: relative;
-
     }
     .card-lower{
         padding: 0 1rem;
@@ -73,6 +74,21 @@
         bottom: 15px;
         right: 10px;
     }
+    .offer{
+        background-color: red;
+        color: white;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        text-align: center;
+        font-weight: bold;
+        position: absolute;
+        top: -8px;
+        right: -8px;
+    }
+    #offer-text{
+        transform: translate(-5px, 15px);
+    }
 </style>
 <body>
     <br><br><br><br><br>
@@ -83,7 +99,7 @@
             <button id="chat">Chat: 11</button>
             <button id="views">Views: 9141</button>
         </div>
-        
+        <div class="offer"><div id="offer-text">20% OFF</div></div>
         <br> <br>
         <div class="card-lower">
             <span class="capsule">Active</span>
