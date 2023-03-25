@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: antiquewhite;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 1.3rem;
+        line-height: 1.7em;
+    }
+    a{
+        text-decoration: none;
+        position: relative;
+    }
+    a:hover::after{
+        /* content: attr(width); */
+        content: attr(data-message);
+        background-color: black;
+        color: antiquewhite;
+        padding: 5px 15px;
+        border-radius: 20px;
+        position: absolute;
+        bottom: 110%;
+        left: 50%;
+        white-space: nowrap;
+    }
+    #twitter:hover::after{
+        content: "Follow us on twitter";
+    }
+    
+</style>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure?</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <a data-message="Like our facebook page!" href="#" width="200px">Blanditiis consectetur</a> sapiente ratione? Aliquam consequatur aspernatur aperiam corporis ipsum hic illo nam? Blanditiis laborum porro perspiciatis, velit accusantium sed inventore aperiam non nobis, expedita eum. Nulla, quod unde. Similique incidunt ipsum odio ea, nihil dicta quas impedit debitis excepturi quo quisquam tempora ad porro, nesciunt illum? Accusantium rerum, error fuga non ratione placeat aliquid quisquam obcaecati provident laboriosam corporis magnam ex repudiandae harum fugit quo rem impedit eum nostrum illum itaque distinctio molestias? Voluptates quo assumenda pariatur accusantium sed alias minus, explicabo eum. <a data-message="Follow us on twitter" href="#">Repudiandae</a> provident dolor ad magnam voluptas, officia sequi nihil ipsa, commodi unde repellendus maxime exercitationem recusandae optio? Consequatur nam nobis autem voluptas libero nisi recusandae temporibus debitis possimus esse eius, eveniet voluptatum a ipsum, nemo molestiae corporis error modi similique blanditiis perspiciatis consectetur ullam harum voluptatem. Neque, sequi tempora? <a href="#" data-message="Connect with us on linked in">Quaerat at iste</a> tenetur expedita voluptates cumque impedit? Asperiores voluptates provident enim vero. Eum numquam magni reiciendis optio voluptatum rem libero tempora ullam maxime aperiam ab voluptatem nesciunt quo recusandae, vel porro repellat alias impedit quae quam laboriosam, aspernatur corporis consectetur! Quod fugiat quis quas ab accusamus magni quos at excepturi. Ad ut reiciendis sint maxime illum voluptas sed illo provident obcaecati dolorum. Quaerat atque provident distinctio itaque possimus, autem molestias numquam, laborum dolore nam ullam sapiente! Vel, repellat. Beatae non quia, placeat eum distinctio eligendi qui quas ea, laborum quibusdam delectus sequi veniam veritatis maiores porro commodi voluptatibus natus ducimus? Expedita temporibus voluptates illo praesentium <a data-message="Join our mailing list" href="#">commodi vel hic.</a></p>
+
+    <form action="">
+        <div>
+            <input type="text">
+        </div>
+    </form>
+</body>
+</html>
