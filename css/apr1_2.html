@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .boxes{
+        border: solid red;
+        width: 150px;
+        height: 40px;
+    }
+    #box1{
+        margin-bottom: 20px;
+        margin-left: 30px;
+        margin-top: 40px;
+        margin-right: 10px;
+    }
+    #box2{
+        /* Margins Overlap only in block elements! */
+        margin-top: 30px;
+    }
+    #box3{
+        /* Equal margin all the sides */
+        margin: 15px;
+    }
+
+    #box5{
+        /* margin: top-bottom left-right */
+        margin: 15px 30px;
+    }
+
+    #box7{
+        /* clock-wise margin: top right bottom left */
+        margin: 10px 20px 30px 40px;
+    }
+    #box9{
+        /* margin: top left-right bottom */
+        margin: 15px 30px 45px;
+    }
+
+    .btn{
+        border: solid blue;
+    }
+    #btn1{
+        margin-right: 50px;
+    }
+    #btn2{
+        /* Margins don't overlap if any of the elements is inline */
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+    #btn3, #btn4{
+        width: 60px;
+        margin-bottom: 20px;
+    }
+    #btn3{
+        margin-left: auto;
+    }
+    #btn4{
+        /* margin-right: auto;
+        margin-left: auto; */
+        margin: auto;
+        /* margin:auto does not work vertically. */
+        /* margin:auto works ONLY ON block elements after assigning them some width. */
+    }
+    #btn5{
+        margin: auto;
+    }
+</style>
+<body>
+<!-- 
+    <div class="boxes" id="box1">Box 1</div>
+    <div class="boxes" id="box2">Box 2</div>
+    <div class="boxes" id="box3">Box 3</div>
+    <div class="boxes" id="box4">Box 4</div>
+    <div class="boxes" id="box5">Box 5</div>
+    <div class="boxes" id="box6">Box 6</div>
+    <div class="boxes" id="box7">Box 7</div>
+    <div class="boxes" id="box8">Box 8</div>
+    <div class="boxes" id="box9">Box 9</div>
+    <div class="boxes" id="box10">Box 10</div>
+     -->
+    
+    <button class="btn" id="btn1">Button 1</button>
+    <button class="btn" id="btn2">Button 2</button> <br>
+    <div class="btn" id="btn3">Button 3</div>
+    <div class="btn" id="btn4">Button 4</div>
+    <button class="btn" id="btn5">Button 5</button>
+</body>
+</html>
+<!-- Next Class: Padding & Onwards -->
+
