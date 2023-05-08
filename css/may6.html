@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Rajdhani:wght@400;500&display=swap');
+
+    /* Complete CSS Reset */
+    *,
+    ::before,
+    ::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Rajdhani', sans-serif;
+        background-color: black;
+        color: #f3f3f3;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .title {
+        font-family: 'Oswald', sans-serif;
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+        border: 1px solid;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+        background-color: blanchedalmond;
+        color: black;
+        padding: 0.5rem 1.5rem;
+        margin-right: 1rem;
+        border-radius: 10px;
+        border: solid blanchedalmond 1px;
+    }
+    .btn:hover{
+        background-color: transparent;
+        color: blanchedalmond;
+    }
+    #title-section{
+        padding: 1rem 10vw;
+        /* text-align: left;       default */
+    }
+    section{
+        padding: 5rem 10vw;
+    }
+    #section-1{
+        background-color: darkolivegreen;
+        text-align: center;
+    }
+    #section-2{
+        text-align: right;
+    }
+    #section-3{
+        position: relative;
+        text-align: justify;
+    }
+    #section-3::after{
+        content: "";
+        width: 100vw;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: url("images/buildings-1839726_1920.jpg") center/100vw auto;
+        z-index: -1;
+        opacity: 0.6;
+    }
+</style>
+
+<body>
+    <section id="title-section">
+        <h1 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero excepturi.</h1>
+    </section>
+    <section id="section-1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum inventore provident, tempore temporibus dolor
+            distinctio ipsam iste at iure rem libero! Error voluptate deleniti ut laudantium tempora? Nisi praesentium
+            quo beatae quibusdam voluptas adipisci non amet at reiciendis, iste ducimus facere eos laborum, quidem eum
+            exercitationem. Ut veniam labore modi?</p>
+        <a href="#" class="btn">Button 1</a>
+        <a href="#" class="btn">Button 2</a>
+    </section>
+    <section id="section-2">
+        <p>Repellendus eaque accusantium hic architecto fugit nobis voluptatum, corporis beatae facilis magnam illum
+            repellat tenetur, ipsam, qui porro? Quidem, adipisci dolore. Iure, vel incidunt aperiam corporis sunt
+            aspernatur in cumque porro numquam aliquam ullam suscipit! Optio sequi vero tenetur repudiandae quaerat illo
+            dolores ad sint placeat inventore, quo voluptatem saepe.</p>
+        <a href="#" class="btn">Button 3</a>
+        <a href="#" class="btn">Button 4</a>
+    </section>
+    <section id="section-3">
+        <p>Consequatur quos hic voluptatem. Ipsam provident a dignissimos molestias soluta ut veniam rem, rerum deserunt
+            dolorem aliquid voluptates illo adipisci possimus nobis, eligendi harum in quaerat molestiae repellat quis
+            doloribus, officiis voluptas qui! Blanditiis amet minima est error inventore repellendus harum? Placeat ab
+            corrupti consectetur, non iusto sapiente dicta possimus!</p>
+        <a href="#" class="btn">Button 5</a>
+        <a href="#" class="btn">Button 6</a>
+    </section>
+</body>
+
+</html>
