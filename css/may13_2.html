@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        /* border: solid maroon; */
+        display: flex;
+
+        /* To align flex-items horizontally */
+        /* justify-content: center; */
+        /* justify-content: flex-start;    default */
+        /* justify-content: flex-end; */
+        justify-content: space-between;
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+
+        /* justify-content: space-between; */
+        /* padding: 0 25px; */
+
+        /* justify-content: center; */
+        /* gap: 5rem;
+        gap: 2rem; */
+        /* gap: 100px; */
+
+        /* To align flex-items vertically */
+        /* align-items: center; */
+        /* height: 100vh; */
+        /* align-items: flex-end; */
+        /* align-items: flex-start;    default */
+    }
+    .boxes{
+        border: solid maroon;
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        font-family: monospace;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 2rem 0;
+        /* margin: 0 1rem; */
+        /* margin-right: 5rem; */
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="boxes" id="box1">Box 1</div>
+        <div class="boxes" id="box2">Box 2</div>
+        <div class="boxes" id="box3">Box 3</div>
+        <div class="boxes" id="box4">Box 4</div>
+        <div class="boxes" id="box5">Box 5</div>
+        <div class="boxes" id="box6">Box 6</div>
+    </div>
+</body>
+</html>
+<!-- Next Class: flex-wrap etc -->
