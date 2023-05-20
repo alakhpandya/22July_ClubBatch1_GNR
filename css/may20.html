@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Display - Grid -->
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: aliceblue;
+        font-family: sans-serif;
+        padding: 1rem;
+    }
+    .container{
+        display: grid;
+        gap: 1.5rem;
+        /* grid-template-columns: 300px 300px 300px 300px; */
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    }
+    .card{
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    #card1{
+        background-color: blueviolet;
+    }
+    #card2{
+        background-color: darkslategrey;
+    }
+    #card5{
+        background-color: #333;
+    }
+    
+    #card1, #card2, #card5{
+        color: white;
+    }
+    #card3, #card4{
+        background-color: white;
+    }
+
+    .name{
+        font-size: 1.3rem;
+    }
+    .designation{
+        font-size: 1.2rem;
+    }
+    .title{
+        margin: 1.5rem 0;
+        font-size: 2rem;
+    }
+    .text{
+        font-size: 1.3rem;
+    }
+
+    @media (min-width: 760px){
+        .container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        #card1{
+           grid-column: span 2;
+        }
+        #card3{
+            grid-row: span 2;
+        }
+        #card5{
+            grid-column: span 2;
+        }
+    }
+
+    @media (min-width: 1024px){
+        .container{
+            grid-template-columns: repeat(4, 1fr);
+
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h1 class="name">Lorem, ipsum.</h1>
+            <p class="designation">Lorem, ipsum.</p>
+            <h2 class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus excepturi assumenda,
+                repudiandae expedita ad rem ex odio! Deserunt fuga beatae sapiente.</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quis, sequi corrupti maiores
+                tempore vel. Tenetur voluptatibus nihil quaerat dolores facere reiciendis nostrum ea nemo voluptates
+                velit quasi optio magnam nam amet veritatis, asperiores fugiat mollitia maiores dicta ipsum. Eaque eum
+                fugit consectetur?</p>
+        </div>
+        <div class="card" id="card2">
+            <h1 class="name">Saepe, dolores!</h1>
+            <p class="designation">Nihil, numquam.</p>
+            <h2 class="title">Neque ullam quisquam accusamus esse perspiciatis</h2>
+            <p class="text">Praesentium, minima. Dolore quos totam soluta vel architecto ut nam voluptas odio? Porro
+                quis sunt illum voluptas inventore repellendus nostrum ipsa, earum excepturi expedita?</p>
+        </div>
+        <div class="card" id="card3">
+            <h1 class="name">Dicta, ut?</h1>
+            <p class="designation">Aperiam, cumque!</p>
+            <h2 class="title">Amet, neque? Facilis provident, modi.</h2>
+            <p class="text">Dolorem sapiente dolorum eaque est omnis sed, eligendi cupiditate a veniam accusantium?
+                Accusamus doloremque sequi maiores quam assumenda commodi, alias sint neque numquam autem consectetur
+                atque aut harum corporis? Magni atque eligendi itaque, tempore, est amet hic a sunt commodi illum sit
+                saepe nobis sequi, quibusdam rem repellendus aliquid praesentium consequatur totam numquam fugiat
+                nesciunt quia autem. Aspernatur nihil, ipsum iusto unde vero minus a molestiae libero eos et hic
+                officiis! Fugit optio excepturi cupiditate aspernatur, quidem quod labore minima.</p>
+        </div>
+        <div class="card" id="card4">
+            <h1 class="name">Sequi, ad!</h1>
+            <p class="designation">Repellendus, earum.</p>
+            <h2 class="title">Totam, vero quasi non at ad!</h2>
+            <p class="text">Culpa asperiores, fuga laboriosam adipisci ratione itaque nostrum eveniet. Atque beatae
+                sapiente hic fuga officiis porro consectetur excepturi et officia</p>
+        </div>
+        <div class="card" id="card5">
+            <h1 class="name">Minus, reprehenderit.</h1>
+            <p class="designation">Veritatis, voluptatem!</p>
+            <h2 class="title">Fugiat illo earum cum id quod deserunt amet error nihil tempore minus et.</h2>
+            <p class="text">Deleniti cum magnam provident eaque eos aliquid maxime quisquam assumenda quaerat soluta,
+                veritatis autem. Mollitia distinctio magnam aspernatur explicabo sed earum quaerat numquam odit. Facere
+                expedita minus assumenda impedit deleniti non vitae dolore sapiente reiciendis!</p>
+        </div>
+    </div>
+</body>
+
+</html>
